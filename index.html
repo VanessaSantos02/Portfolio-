@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Design</title>
+</head>
+
+<style>
+    *{
+        margin: 2px;
+        padding: 0;
+        box-sizing: border-box;
+        font: sans-serif;
+    }
+
+    body{
+        background-color: #0d1117;
+        
+    }
+
+    header{
+        color: white;
+        font-weight: bold;
+        font-size: 100px;
+        }
+
+    img{
+        border: 2px solid gray ;
+        width: 25px;
+        border-radius: 15px;
+    }
+
+    #name{
+        font-size: 20px;
+    }
+
+    #img_me {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-bottom: 5px;
+        color: white;
+    }
+
+    #nav ul{
+        list-style-type: none;
+        background-color: gray;
+        padding: 0px;
+        margin: 0px;
+        overflow: hidden;
+        color: wheat;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        gap: 30px;
+    }
+
+    #nav li a{
+        display:block ;
+        color: black;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+    }
+
+    #nav li a:hover {
+        background-color: 	#3f536d ;
+        color: white;
+    }
+
+    .about {
+        background-color: 	#161b22;
+        color: white;
+        width: none;
+        border-radius: 15px;
+        border: 2px solid gray ;
+        padding: 50px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        box-shadow: 10px 10px 5px grey;
+    }
+
+    .educ {
+        background-color: 	#161b22;
+        color: white;
+    }
+
+    nav{
+        background-color: 	#161b22;
+        color: white;
+        width: none;
+        border-radius: 15px;
+        padding: 20px;
+        box-shadow: 10px 10px 5px grey;
+        border: 2px solid gray ;
+        font-size: 20px;
+        margin-bottom: 20px;
+        margin-top: 10px;
+        
+    }
+
+    nav ul{
+        list-style-type: disc;
+        margin: 0px;
+        padding-left: 20px;
+    }
+
+    .color{
+        background-color: 	#161b22;
+        color: white;
+        border-radius: 15px;
+        padding-bottom:30px; ;
+        box-shadow: 10px 10px 5px grey;
+        border: 1px solid gray ;
+        padding: 30px;
+        margin-bottom: 30px;
+    }
+
+    h1{
+        color: white;
+    }
+
+    .wattpad {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px; /* Space between books */
+        max-width: none;
+        margin-left: 0;
+        margin-right: auto;
+    }
+        
+    .title a{
+        color: white;
+        text-decoration: underline;
+    }
+
+    .sc a{
+        color: white;
+        text-decoration: underline;
+    }
+
+
+    .books {
+        background-color: #161b22;
+        padding: 10px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px lightgrey;
+        text-align: center;
+        color: white;
+    }
+
+    .cover {
+        width:  none;
+        height: 150px;
+        background-color:  #161b22; /* Placeholder color */
+        border-radius: 4px;
+        margin-bottom: 8px;
+    }
+
+
+    .contact{
+        background-color: #161b22;
+        padding: 40px;
+        border-radius: 15px;
+        border: 1px solid gray;
+        width: none;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid gray ;
+        box-shadow: 10px 10px 5px grey;
+        margin-bottom: 30px;
+    }
+
+    h1{
+        margin-bottom: 20px;
+    }
+
+    .source a{
+        color: white;
+    }
+
+    
+    .iconlist{
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        }
+
+    @media (max-width: 600px) {
+        header{
+            font-size: 30px;
+        }
+
+        #nav ul{
+            flex-direction: row;
+        }
+        
+        #nav li a {
+            border-bottom: 1px solid;
+        }
+
+        .iconlist{
+            gap: 10px;
+        }
+
+        .wattpad{
+            grid-template-columns: 1fr;
+        }
+
+        .iconlist img{
+            width: 60px;
+            flex-direction: row;
+        }
+    }
+
+    @media (min-width: 800px) {
+        body{
+            padding: 40px;
+        }
+
+        #img_me{
+            flex-direction: row;
+            text-align: left;
+        }
+
+        #img_me img{
+            width: 200px;
+        }
+
+        #nav ul{
+            flex-direction: row;
+            gap: 30px;
+        }
+
+        #nav li a{
+            padding: 20px;
+            border-bottom: none;
+        }
+
+        .about, nav, .color{
+            padding: 40px;
+        }
+
+        .iconlist img{
+            width: 100px;
+        }
+
+        .wattpad{
+            grid-template-columns: repeat(3,1fr);
+        }
+    }
+
+</style>
+<body>
+
+    <a id="home"></a>
+    <header>MY PORTFOLIO IN WS101</header>
+
+    <div id="img_me">
+    <img src="portfoliopic.jpg" style="width:200px">
+    
+    <div id="name">
+    <p>Vanessa H. Santos</p>
+    <p>Welcome to my Web Development Portfolio this portfolio contains all my lab task in Ws101, in this porfolio you can see all my code from simple html to css this represent my knowledge about html and css and what i already learned in this subject.</p>
+
+    </div>
+    </div>
+    
+    <div id="nav">
+        <ul>
+            <li><a href="#home">Home </a></li>
+            <li><a href="#aboutme">About Me</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#my projects">My Projects </a></li>
+            <li><a href="#contact">Contact </a></li>
+        </ul>
+    </div>
+
+    <div class="about">
+    <a id="aboutme"></a>
+    <h1>About Me</h1>
+    <p>Hello everyone, Im Vanessa 18 years old a college student of Pampanga State Agricultural University and a 1st year taking Bachelor of Science in Information Technolog. I am a little bit noisy when i am in schoool. And I like Reading Books, Watching Movies and Dramas, Bonding with my Family for example roadtrip, and going out with my friends and were going to hunt a coffee shop. I also enjoy coding and create a website.
+</p>
+</div>
+
+    <nav>
+    <a id="education"></a>
+    <h1 class="educ">Education</h1>
+    <ul>
+        <li>Elementary: San Antonio Elementary School</li>
+        <li>Junior High School: Anastacio G. Yumul High School</li>
+        <li>Senior High School: Benigno S. Aquino National High School</li>
+            <ul>
+                <li>Srand: STEM</li>
+            </ul>
+        <li>College: Pampanga Sate Agricultural University</li>
+            <ul>
+                <li>Program: Bachelor of Science in Information Technology</li>
+            </ul>
+    </ul>
+    </nav>
+
+<div class="color">
+    <a id="my projects"></a>
+    <h1>My Projects</h1>
+
+    <div class="wattpad">
+        <div class="books">
+            <div class="cover"><img src="Resume.New.jpg"  style="width: 300px"></div>
+                <p class="title"><a href="https://vanessasantos02.github.io/Midterm-Lab-Task-1/">Midterm Lab Task 1: Resume Writing</a><p>Description: This is about the simple coding in WS101 where I created a resume using HTML</p></p>
+                <p class="sc"><a href="https://vanessasantos02.github.io/Source-Code-Resume/">Source Code</a></p>
+        </div>
+
+        <div class="books">
+            <div class="cover"><img src="nested.list.image.jpg" style="width: 190px;"></div>
+                <p class="title"><a href="https://vanessasantos02.github.io/Midterm-Lab-Task-2/">Midterm Lab Task 2: Nested List</a><br><p>Description: This coding Is about nested list where you create a list and then within theat list there is a list inside it.</p></p>
+                <p class="sc"><a href="https://vanessasantos02.github.io/Source-Code-Resume-apply-CSS/">Source Code</a></p>
+        </div>
+
+        <div class="books">
+            <div class="cover"><img src="image.map.new.jpg" style="width: 240px;"></div>
+                <p class="title"><a href="https://vanessasantos02.github.io/Mid-Term-Lab-Task-3/">Midterm Lab Task 3: image Map</a><br><p>Description: This coding is about an image map where the image is when you click on a part where there is a code, you will be taken to a website that is linked to the picture.</p>
+                <p class="sc"><a href=" https://vanessasantos02.github.io/Source-Code-Image-Map/">Source Code</a></p>
+        </div>
+
+        <div class="books">
+            <div class="cover"><img src="Forms.jpg" style="width: 260px;"></div>
+                    <p class="title"><a href="https://vanessasantos02.github.io/Midterm-Lab-Task-4/">Midterm Lab Task 4: HTML Forms</a><p>Description: This coding is about how to make a form, how to make check boxes on a form and much more</p>
+                    <p class="sc"><a href=" https://vanessasantos02.github.io/Source-Code-Html-forms-/">Source Code</a></p>
+        </div>
+
+        <div class="books">
+            <div class="cover"><img src="resume.with.cssc.jpg" style="width: 300px;"></div>
+                <p class="title"><a href="https://vanessasantos02.github.io/Midterm-Lab-Task-5/">Midterm Lab Task 5: Resume with CSS</a><br><p>Description: In this lab task, the use of CSS has been applied to a resume, how to design it and how to make it more beautiful></p>
+                    <p class="sc"><a href="https://vanessasantos02.github.io/Source-Code-Resume-apply-CSS/">Source Code</a></p>
+        </div>
+
+        <div class="books">
+            <div class="cover"><img src="display.property.jpg" style="width: 250px;"></div>
+                <p class="title"><a href=" https://vanessasantos02.github.io/Midterm-Lab-Task-6/">Midterm Lab Task 6: Display Property of Html</a><br><p>Description: This lab task is about the display property where we can see how a sign up form or the front of Google is designed where there is a search bar at the bottom or if its design like block, inline-block or inline.</p>
+                    <p class="sc"><a href="https://vanessasantos02.github.io/Source-Code-Display-Property-in-HTML/">Source Code </a></p>
+        </div>
+    </div>
+</div>
+
+<div class="contact">
+    <a id="contact"></a>
+    <h1>Contact</h1>
+
+    <div class="iconlist">
+        <a href="https://www.facebook.com/vanessa.santos.13099"><img src="facebook.webp" style=" width:100px;"></a>
+        <a href="https://www.instagram.com/i.am.vanessa02/"><img src="new.insta.png" style="width: 100px;"></a>
+        <a href="https://mail.google.com/mail/u/0/#inbox"><img src="gmail.webp" style="width: 100px;"></a>
+        <a href="https://m.me/vanessa.santos.13099"><img src="new.messenger.png" style="width: 100px;"></a>
+    </div>
+</div>
+
+<h1 class="source"><a href="https://vanessasantos02.github.io/Source-Code-Portfolio/"> SOURCE CODE OF PORTFOLIO</a></h1>
+
+
+</body>
+</html>
